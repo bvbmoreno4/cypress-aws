@@ -18,7 +18,7 @@ phases:
       - npm install
   pre_build:
     commands:
-      - npm run cy:info
+      - npm install --save-dev cypress@13.8.1
   build:
     commands:
       - npx cypress run
